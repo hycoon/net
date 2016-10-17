@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         
         //开始测试
         //服务器上添加代码01
-        //本地添加添加代码02
+   
+        //服务器删除本地代码02
     }
 }
