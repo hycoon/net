@@ -2,6 +2,7 @@ package com.hycoon.net;
 
 import org.apache.http.HttpEntity;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -26,6 +27,9 @@ public class Request {
 
     public Map<String, String> headers;
 
+    public ICallback callback;
+
+    public IRequestListener listener;
 
     public Request(String url, RequestMethod method) {
         this.url = url;
@@ -36,4 +40,36 @@ public class Request {
         this.url = url;
         this.method = method.GET;
     }
+
+    public void setCallback(ICallback callback) {
+        this.callback = callback;
+    }
+
+    public void setRequestLisener(IRequestListener lisener) {
+        this.listener = lisener;
+    }
+
+    public void addHeader(String key, String value) {
+
+        if (headers == null) {
+            headers = new HashMap<String, String>();
+        }
+        headers.put(key, value);
+
+    }
+
+
+    public void execute() {
+        RequestTask task = new RequestTask(this);
+        task.execute();
+
+    }
+
+    public void cancel() {
+        if (callback != null) {
+            callback.cancel();
+        }
+    }
+
+
 }
