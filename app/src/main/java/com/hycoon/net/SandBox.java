@@ -8,4 +8,7 @@ package com.hycoon.net;
  * 邮 箱： yuhaikun19920202@gmail.com
  */
 public class SandBox   {
+    /**
+     * 就用它做测试吧
+     */
 }
