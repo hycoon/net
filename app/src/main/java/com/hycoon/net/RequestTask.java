@@ -19,6 +19,11 @@ public class RequestTask extends AsyncTask<Void, Integer, Object> {
         this.request = request;
     }
 
+    /**
+     * 添加新注解
+     */
+    public void test() {
+    }
 
     @Override
     protected void onPreExecute() {
