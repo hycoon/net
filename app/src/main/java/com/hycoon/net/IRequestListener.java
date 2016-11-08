@@ -8,7 +8,7 @@ package com.hycoon.net;
  * 邮 箱： yuhaikun19920202@gmail.com
  */
 public interface IRequestListener {
-
+    //添加注解
     void onProgressUpdate(int curPos, int contentLong);
-//提交修改
+
 }
