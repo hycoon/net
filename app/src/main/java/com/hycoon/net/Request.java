@@ -15,6 +15,8 @@ import java.util.Map;
 public class Request {
 
 
+    private RequestTask mTask;
+
     public enum RequestMethod {
         GET, POST, PUT, DELETE
     }
@@ -60,8 +62,8 @@ public class Request {
 
 
     public void execute() {
-        RequestTask task = new RequestTask(this);
-        task.execute();
+        mTask = new RequestTask(this);
+        mTask.execute();
 
     }
 
