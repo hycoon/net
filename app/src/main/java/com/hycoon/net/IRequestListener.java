@@ -10,5 +10,5 @@ package com.hycoon.net;
 public interface IRequestListener {
 
     void onProgressUpdate(int curPos, int contentLong);
-
+//提交修改
 }
