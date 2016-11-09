@@ -9,8 +9,8 @@ package com.hycoon.net;
  */
 public interface IRequestListener {
     //添加注解
-    //添加注解
-    //添加注解
+    //添加注解合并
+    //添加注解合并
     void onProgressUpdate(int curPos, int contentLong);
 
 }

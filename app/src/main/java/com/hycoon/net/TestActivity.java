@@ -25,6 +25,9 @@ public class TestActivity extends Activity {
     private static final String TAG = "hycoon";
     private TextView testTv;
 
+    public TestActivity(TextView testTv) {
+        this.testTv = testTv;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +96,7 @@ public class TestActivity extends Activity {
             public ArrayList<ModuleEntity> preRequest() {
 
                 //读数据库操作
-            //TODO  query  from  database
+                //TODO  query  from  database
                 return null;
 
             }
