@@ -24,10 +24,13 @@ import java.util.ArrayList;
 public class TestActivity extends Activity {
     private static final String TAG = "hycoon";
     private TextView testTv;
+    private int a = 0;
+    private int b = 0;
 
-    public TestActivity(TextView testTv) {
-        this.testTv = testTv;
+    private int math(int a, int b) {
+        return a * b;
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
